@@ -17,10 +17,13 @@ export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 ```
-## fonts & chinese & emoji
+## fonts
 ```zsh
+#英文
 yay -S adobe-source-code-pro-fonts nerd-fonts-source-code-pro noto-fonts-noto
+#中文
 yay -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+#emoji
 yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid
 ```
 
