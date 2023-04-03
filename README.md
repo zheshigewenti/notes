@@ -1,9 +1,9 @@
 # clash
-首先要下载对应的`clash for windows` 版本,当前为arch
-进入对应的文件下使用解压命令`tar -zxvf 文件名`
-解压完成后cd进入文件后`./cfw` 运行
+下载`clash for windows` linux版本
+解压文件`tar -zxvf 文件名`
+cd进入文件后`./cfw` 
 
-配置代理协议环境变量,我使用的是自定义vim按键
+配置代理环境变量
 ```shell
 cd etc/profile.d/
 v proxy.sh
@@ -17,4 +17,11 @@ export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 ```
+## fonts
+```zsh
+yay -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid
+sudo pacman -S nerd-fonts
+```
+
 
