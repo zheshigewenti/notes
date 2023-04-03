@@ -10,7 +10,7 @@ v proxy.sh
 
 ```
 复制下列信息到`proxy.sh` 中
-```
+```bash
 export http_proxy=http://127.0.0.1:7890/
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
@@ -18,7 +18,7 @@ export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 ```
 ## fonts
-```zsh
+```bash
 #英文
 yay -S adobe-source-code-pro-fonts nerd-fonts-source-code-pro noto-fonts-noto
 #中文
