@@ -18,7 +18,7 @@ export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 ```
 ## fonts
-```bash
+```shell
 #英文
 yay -S adobe-source-code-pro-fonts nerd-fonts-source-code-pro noto-fonts-noto
 #中文
