@@ -28,5 +28,5 @@ monospace
 #中文
 yay -S wqy-microhei
 #字符&表情
-yay -S ttf-sourcecodepro-nerd ttf-liberation
+yay -S ttf-sourcecodepro-nerd ttf-liberation noto-fonts-emoji
 
