@@ -28,5 +28,5 @@ monospace
 #中文
 yay -S ttf-lxgw-wenkai ttf-lxgw-wenkai-mono
 #字符&表情
-yay -S ttf-sourcecodepro-nerd ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid
+yay -S ttf-sourcecodepro-nerd ttf-liberation
 
