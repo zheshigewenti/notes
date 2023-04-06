@@ -2,7 +2,7 @@
 下载`clash for windows` linux版本
 解压文件`tar -zxvf 文件名`
 cd进入文件后`./cfw` 
-配置代理环境变量
+配置环境变量
 ```shell
 cd etc/profile.d/
 v proxy.sh
@@ -24,10 +24,9 @@ sudo timedatectl set-ntp true
 ## st fonts & dwm fonts
 ```shell
 #英文
-yay -S ttf-sourcecodepro-nerd    自带monospace
+monospace
 #中文
-yay -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
-#emoji
-yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid
-
+yay -S ttf-lxgw-wenkai ttf-lxgw-wenkai-mono
+#字符&表情
+yay -S ttf-sourcecodepro-nerd ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid
 
