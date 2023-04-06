@@ -26,7 +26,7 @@ sudo timedatectl set-ntp true
 #英文
 monospace
 #中文
-yay -S ttf-lxgw-wenkai ttf-lxgw-wenkai-mono
+yay -S wqy-microhei
 #字符&表情
 yay -S ttf-sourcecodepro-nerd ttf-liberation
 
