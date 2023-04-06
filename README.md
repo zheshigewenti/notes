@@ -21,10 +21,10 @@ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 sudo timedatectl set-ntp true
 ```
 
-## fonts
+## st fonts & dwm fonts
 ```shell
 #英文
-yay -S adobe-source-code-pro-fonts nerd-fonts-source-code-pro noto-fonts-noto
+yay -S ttf-sourcecodepro-nerd    自带monospace
 #中文
 yay -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 #emoji
