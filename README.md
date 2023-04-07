@@ -24,7 +24,7 @@ sudo timedatectl set-ntp true
 ## st fonts & dwm fonts
 ```shell
 #英文
-monospace
+Source Code Pro
 #中文
 yay -S wqy-microhei
 #字符&表情
