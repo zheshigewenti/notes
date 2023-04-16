@@ -15,12 +15,10 @@ alias r='ranger'
 
 export EDITOR=nvim
 
-#fzf
-
+#fzf.vim
 export FZF_DEFAULT_OPTS='--bind ctrl-j:down,ctrl-k:up --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500"'
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-# export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500'
-#
+export FZF_DEFAULT_COMMAND='rg -S --files --hidden'
+#fzf
 # Use ~~ as the trigger sequence instead of the default **
 export FZF_COMPLETION_TRIGGER='\'
 
@@ -35,9 +33,9 @@ _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
 }
 
-# Use fd to generate the list for directory completion
+# Use fd to generate the list for directory completion  使用fd生成搜索列表
 _fzf_compgen_dir() {
-  fd --type d --hidden --follow --exclude ".git" . "$1" . ".cache"
+  fd --type d --hidden --follow --exclude ".git" . "$1" 
 }
 
 # Advanced customization of fzf options via _fzf_comprun function
@@ -55,4 +53,7 @@ _fzf_comprun() {
   esac
 }
 
+
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
