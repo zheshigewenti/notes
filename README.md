@@ -1,11 +1,11 @@
 ## clash
 下载`clash for windows` linux版本
 解压文件`tar -zxvf 文件名`
-cd进入文件后`./cfw` 
+cd进入文件后`./cfw`
 配置环境变量
 ```shell
 cd etc/profile.d/
-v proxy.sh
+vim proxy.sh
 ```
 复制下列信息到`proxy.sh` 中
 ```bash
@@ -24,7 +24,7 @@ sudo timedatectl set-ntp true
 ## st fonts & dwm fonts
 ```shell
 #英文
-Source Code Pro
+yay Source Code Pro
 #中文
 yay -S wqy-microhei
 #字符&表情
