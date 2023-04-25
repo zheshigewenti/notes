@@ -29,11 +29,13 @@ yay Source Code Pro
 yay -S wqy-microhei
 #字符&表情
 yay -S ttf-sourcecodepro-nerd ttf-liberation noto-fonts-emoji
-
-#vimtex目录权限
-
 ```
-sudo chown -R $(whoami):$(whoami) ~/.cache/vimtex
+
+## vimtex probleams
 ```
+#目录权限  
+sudo chown -R $(whoami):$(whoami) ~/.cache/vimtex 
+```
+
 
 
