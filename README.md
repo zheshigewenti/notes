@@ -31,6 +31,7 @@ yay -S wqy-microhei
 yay -S ttf-sourcecodepro-nerd ttf-liberation noto-fonts-emoji
 
 #vimtex目录权限
+
 ```
 sudo chown -R $(whoami):$(whoami) ~/.cache/vimtex
 ```
