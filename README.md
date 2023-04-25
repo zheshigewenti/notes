@@ -32,7 +32,7 @@ yay -S ttf-sourcecodepro-nerd ttf-liberation noto-fonts-emoji
 ```
 
 ## vimtex probleams
-```
+```shell
 #目录权限  
 sudo chown -R $(whoami):$(whoami) ~/.cache/vimtex 
 ```
