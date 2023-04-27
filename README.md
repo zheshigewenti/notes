@@ -10,8 +10,8 @@ sudo timedatectl set-ntp true
 
 ## fonts
 ```shell
-#英文
-yay -S ttf-liberation (st fonts:Liberation Mono)
+#英文 st fonts:Liberation Mono
+yay -S ttf-liberation
 #中文
 yay -S wqy-microhei
 #字符&表情
