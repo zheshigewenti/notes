@@ -8,7 +8,7 @@ cd进入文件后`./cfw`
 sudo timedatectl set-ntp true
 ```
 
-## st fonts & dwm fonts
+## fonts
 ```shell
 #英文
 yay ttf-liberation (st fonts:Liberation Mono)
