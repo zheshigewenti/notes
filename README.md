@@ -11,11 +11,11 @@ sudo timedatectl set-ntp true
 ## st fonts & dwm fonts
 ```shell
 #英文
-yay Liberation Mono
+yay ttf-liberation (st fonts:Liberation Mono)
 #中文
 yay -S wqy-microhei
 #字符&表情
-yay -S ttf-sourcecodepro-nerd ttf-liberation noto-fonts-emoji
+yay -S ttf-sourcecodepro-nerd noto-fonts-emoji
 ```
 
 ## vimtex probleams
