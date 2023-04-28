@@ -1,4 +1,5 @@
 
+
 #
 # ~/.zshrc
 #
@@ -10,7 +11,7 @@ HISTFILE=~/.zsh_history
 [[ $- != *i* ]] && return
 
 PS1='%n%# '
-export LS_COLORS=$LS_COLORS:"*.tar=4;36":"*.xz=4;31"
+export LS_COLORS=$LS_COLORS:"*.tar=0;36":"*.xz=0;31":"*.gz=0;31":"*.jpg=0;33":"*.png=0;33"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
