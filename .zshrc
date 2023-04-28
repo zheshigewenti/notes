@@ -9,9 +9,10 @@ HISTFILE=~/.zsh_history
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='Spike$ '
+PS1='%n%# '
+export LS_COLORS=$LS_COLORS:"*.tar=4;36":"*.xz=4;31"
 alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+alias sgrep='grep --color=auto'
 alias vim='nvim'
 alias n='neofetch'
 alias reboot='sudo reboot'
