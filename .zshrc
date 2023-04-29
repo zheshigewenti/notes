@@ -1,17 +1,28 @@
 
-
-#
-# ~/.zshrc
-#
+bindkey -e
+# Case-insensitive matching
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #history
-SAVEHIST=1000  # Save most-recent 1000 lines
+SAVEHIST=100  # Save most-recent 100 lines
 HISTFILE=~/.zsh_history
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 
-PS1='%n%# '
-export LS_COLORS=$LS_COLORS:"*.tar=0;36":"*.xz=0;31":"*.gz=0;31":"*.jpg=0;33":"*.png=0;33"
+# git branch settings
+function git_branch()
+{
+    branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+    if [[ $branch == "" ]]
+    then
+        :
+    else
+			echo "($branch) "
+    fi
+}
+setopt prompt_subst
+git_prompt='$(git_branch)%f'
+PS1='%n%# '$git_prompt
+export LS_COLORS=$LS_COLORS:"*.tar=0;31":"*.xz=0;31":"*.gz=0;31":"*.jpg=0;33":"*.png=0;33"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
@@ -28,10 +39,9 @@ export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
-#fzf.vim
+#fzf
 export FZF_DEFAULT_OPTS='--bind ctrl-j:down,ctrl-k:up --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500"'
 export FZF_DEFAULT_COMMAND='rg -S --files --hidden'
-#fzf
 # Use ~~ as the trigger sequence instead of the default **
 export FZF_COMPLETION_TRIGGER='\'
 
