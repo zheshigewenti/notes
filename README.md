@@ -1,6 +1,6 @@
 ## clash
 下载`clash for windows` linux版本
-解压文件`tar -zxvf 文件名`
+解压文件`tar -xvf 文件名`
 cd进入文件后`./cfw`
 
 ## time synchronization
