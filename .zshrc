@@ -1,5 +1,8 @@
 bindkey -e
 
+#zsh-autosuggestions
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 # Case-insensitive matching
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
