@@ -1,14 +1,14 @@
-
 bindkey -e
+
 # Case-insensitive matching
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #history
-SAVEHIST=100  # Save most-recent 100 lines
+SAVEHIST=1000  # Save most-recent 1000 lines
 HISTFILE=~/.zsh_history
 
-# git branch settings
+# git branch prompt
 function git_branch()
 {
     branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
@@ -19,10 +19,14 @@ function git_branch()
 			echo "($branch) "
     fi
 }
+git_prompt='$(git_branch)'
+PS1='%n%# '%F{#A7C080}$git_prompt%f
+
 setopt prompt_subst
-git_prompt='$(git_branch)%f'
-PS1='%n%# '$git_prompt
-export LS_COLORS=$LS_COLORS:"*.tar=0;31":"*.xz=0;31":"*.gz=0;31":"*.jpg=0;33":"*.png=0;33"
+setopt histreduceblanks
+setopt histignorealldups
+setopt no_nomatch
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
@@ -30,6 +34,7 @@ alias n='neofetch'
 alias reboot='sudo reboot'
 alias r='ranger'
 
+export LS_COLORS=$LS_COLORS:"*.tar=0;31":"*.xz=0;31":"*.gz=0;31":"*.jpg=0;33":"*.png=0;33"
 export EDITOR=nvim
 
 #proxy
