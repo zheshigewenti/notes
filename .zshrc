@@ -8,7 +8,7 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #history
-SAVEHIST=1000  # Save most-recent 1000 lines
+SAVEHIST=20  # Save most-recent 20 lines
 HISTFILE=~/.zsh_history
 
 # git branch prompt
@@ -47,6 +47,12 @@ export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
+export GTK_TM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS="@im=fcitx5"
+export LANG=zh_CN.UTF-8
+export LANGUAGE=zh_CN:en_US
+export LC_CTYPE=en_US.UTF-8
 #fzf
 export FZF_DEFAULT_OPTS='--bind ctrl-j:down,ctrl-k:up --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500"'
 export FZF_DEFAULT_COMMAND='rg -S --files --hidden'
@@ -87,5 +93,5 @@ _fzf_comprun() {
 
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
