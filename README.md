@@ -11,7 +11,7 @@ sudo timedatectl set-ntp true
 
 ## fonts
 ```shell
-#英文 st fonts:Liberation Mono dwm fonts:monospace:size=9
+#英文
 yay -S ttf-liberation
 #中文&韩文
 yay -S wqy-microhei-kr-patched 
