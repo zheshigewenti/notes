@@ -1,3 +1,4 @@
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ## clash
 下载`clash for windows` linux版本
 解压文件`tar -xvf 文件名`
