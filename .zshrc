@@ -35,7 +35,8 @@ alias grep='grep --color=auto'
 alias vim='nvim'
 alias n='neofetch'
 alias reboot='sudo reboot'
-alias r='ranger'
+alias j='joshuto'
+alias t='thunar'
 
 export LS_COLORS=$LS_COLORS:"*.tar=0;31":"*.xz=0;31":"*.gz=0;31":"*.jpg=0;33":"*.png=0;33"
 export EDITOR=nvim
@@ -47,12 +48,16 @@ export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
 export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
+#fcitx
 export GTK_TM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
+
+#lang
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
 export LC_CTYPE=en_US.UTF-8
+
 #fzf
 export FZF_DEFAULT_OPTS='--bind ctrl-j:down,ctrl-k:up --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500"'
 export FZF_DEFAULT_COMMAND='rg -S --files --hidden'
@@ -91,7 +96,6 @@ _fzf_comprun() {
 }
 
 
-
+xinput set-prop "AT Translated Set 2 keyboard" "Device Enabled" 0
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
