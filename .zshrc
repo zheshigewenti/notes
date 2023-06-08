@@ -51,6 +51,7 @@ export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 #fcitx
 export GTK_TM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
+export SDL_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
 
 #lang
