@@ -1,12 +1,11 @@
-JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ## iwd
 ```shell
 #wifi
 iwctl
 device list
-station waln0 scan
-staion wlan0 get-networks
-station wlan0 connect <wifi-ssid>
+station <waln> scan
+staion <wlan> get-networks
+station <wlan> connect <wifi-ssid>
 #dhcp
 cd /etc/iwd/main.conf
 [General]
