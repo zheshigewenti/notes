@@ -6,8 +6,7 @@ JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
     staion wlan0 get-networks
     station wlan0 connect <wifi-ssid>
     cd /etc/iwd/main.conf
-dhcp
-
+    #dhcp
     [General]
     EnableNetworkConfiguration=true
 
