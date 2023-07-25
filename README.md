@@ -1,5 +1,6 @@
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ## iwd
+    #wifi
     iwctl
     device list
     station waln0 scan
