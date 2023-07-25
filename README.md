@@ -1,4 +1,9 @@
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+## iwd
+    iwctl
+    device list
+    staion wlan0 get-networks
+    station wlan0 connect <wifi-ssid>
 ## clash
 下载`clash for windows` linux版本
 解压文件`tar -xvf 文件名`
