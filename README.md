@@ -5,8 +5,8 @@ JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
     station waln0 scan
     staion wlan0 get-networks
     station wlan0 connect <wifi-ssid>
-    cd /etc/iwd/main.conf
     #dhcp
+    cd /etc/iwd/main.conf
     [General]
     EnableNetworkConfiguration=true
 
