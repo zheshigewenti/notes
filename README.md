@@ -1,12 +1,12 @@
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ## iwd
-    #wifi
+    # wifi
     iwctl
     device list
     station waln0 scan
     staion wlan0 get-networks
     station wlan0 connect <wifi-ssid>
-    #dhcp
+    # dhcp
     cd /etc/iwd/main.conf
     [General]
     EnableNetworkConfiguration=true
