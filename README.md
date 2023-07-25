@@ -10,6 +10,8 @@ station <wlan> connect <wifi-ssid>
 cd /etc/iwd/main.conf
 [General]
 EnableNetworkConfiguration=true
+#dhcpcd
+dhcpcd &
 ```
 
 ## clash
