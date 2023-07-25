@@ -1,15 +1,17 @@
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ## iwd
-    # wifi
-    iwctl
-    device list
-    station waln0 scan
-    staion wlan0 get-networks
-    station wlan0 connect <wifi-ssid>
-    # dhcp
-    cd /etc/iwd/main.conf
-    [General]
-    EnableNetworkConfiguration=true
+```shell
+#wifi
+iwctl
+device list
+station waln0 scan
+staion wlan0 get-networks
+station wlan0 connect <wifi-ssid>
+#dhcp
+cd /etc/iwd/main.conf
+[General]
+EnableNetworkConfiguration=true
+```
 
 ## clash
 下载`clash for windows` linux版本
