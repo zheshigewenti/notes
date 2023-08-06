@@ -1,3 +1,4 @@
+cfdisk parsec
 ## iwd
 ```shell
 #wifi
