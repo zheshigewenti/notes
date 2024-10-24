@@ -1,20 +1,4 @@
 cfdisk parsec
-## iwd
-```shell
-#wifi
-iwctl
-device list
-station <waln> scan
-staion <wlan> get-networks
-station <wlan> connect <wifi-ssid>
-#dhcp
-cd /etc/iwd/main.conf
-[General]
-EnableNetworkConfiguration=true
-#dhcpcd
-dhcpcd &
-```
-
 ## clash
 下载`clash for windows` linux版本
 解压文件`tar -xvf 文件名`
