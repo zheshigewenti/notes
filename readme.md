@@ -37,17 +37,10 @@ You can also find video series which: (1) demonstrates the [features](https://ww
 
 ## Table of Contents
 
-1. [Arch Linux Installation](#Arch-Linux-Installation)
-2. [Remapping Keys](#Remapping-Keys)
+[Adding an SSH Key to GitHub](#SSH Key)
 
 The software covered includes NeoVim, Git, Zathura, Zotero, Alacritty, Tmux, and Fish.
 I will also include information for globally remapping keys to [better](https://www.reddit.com/r/vim/comments/lsx5qv/just_mapped_my_caps_lock_to_escape_for_the_first/) suit writing LaTeX documents with NeoVim.
-
-
-# Arch Linux Installation
-
-This installation will begin with necessities and conclude with details for an optional installation of zsh, st, and Tmux to improve your terminal, as well as details for how to add an SSH key and PAT for streamlining your experience of Git.
-If you find any errors in these installation instructions, please don't hesitate to let me know by submitting a PR or opening an issue.
 
 ### Adding an SSH Key to GitHub
 
