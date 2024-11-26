@@ -27,7 +27,7 @@ sudo chown -R $(whoami):$(whoami) ~/.cache/vimtex
 
 ## Table of Contents
 
-1. [Adding an SSH Key to GitHub](#SSH Key)
+[TOC]
 
 The software covered includes NeoVim, Git, Zathura, Zotero, Alacritty, Tmux, and Fish.
 I will also include information for globally remapping keys to [better](https://www.reddit.com/r/vim/comments/lsx5qv/just_mapped_my_caps_lock_to_escape_for_the_first/) suit writing LaTeX documents with NeoVim.
