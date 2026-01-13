@@ -1,10 +1,3 @@
-## Table of Contents
-
-[TOC]
-
-The software covered includes NeoVim, Git, Zathura, Zotero, Alacritty, Tmux, and Fish.
-I will also include information for globally remapping keys to [better](https://www.reddit.com/r/vim/comments/lsx5qv/just_mapped_my_caps_lock_to_escape_for_the_first/) suit writing LaTeX documents with NeoVim.
-
 ### Adding an SSH Key to GitHub
 
 If you have not already, you can also add an SSH key by amending and running the following:
@@ -80,29 +73,3 @@ Repeat the steps above after making a small change to your config to run another
 Run one final test, checking to see if your credentials are now automatically submitted, avoiding the need to enter your username and PAT each time you push or pull changes.
 
 For more help, see these [video](https://www.youtube.com/watch?v=kHkQnuYzwoo) instructions.
-
-
-<!-- ### Installing the GitHub Cli -->
-<!---->
-<!-- Assuming that you are using GitHub to host your repositories, it is convenient to install the GitHub Cli which allows you to make changes to your repositories directly from the terminal inside NeoVim: -->
-<!---->
-<!-- ``` -->
-<!-- sudo pacman -S github-cli -->
-<!-- ``` -->
-<!---->
-<!-- You will then need to follow the [instructions](https://cli.github.com/manual/) in order to authenticate GitHub Cli by running: -->
-<!---->
-<!-- ``` -->
-<!-- gh auth login -->
-<!-- ``` -->
-<!---->
-<!-- Set NeoVim as your default editor by running: -->
-<!---->
-<!-- ``` -->
-<!-- gh config set editor nvim -->
-<!-- ``` -->
-<!---->
-<!-- For further information, see the section **GitHub Cli** in the [Cheat Sheet](https://github.com/benbrastmckie/.config/blob/master/CheatSheet.md) as well as the [GitHub Cli Repo](https://github.com/cli/cli). -->
-
-
-
