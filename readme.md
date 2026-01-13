@@ -1,30 +1,3 @@
-cfdisk parsec
-## clash
-下载`clash for windows` linux版本
-解压文件`tar -xvf 文件名`
-cd进入文件后`./cfw`
-
-## time synchronization
-```shell
-sudo timedatectl set-ntp true
-```
-
-## fonts
-```shell
-#英文
-yay -S ttf-liberation
-#中文&韩文
-yay -S wqy-microhei-kr-patched 
-#字符&表情
-yay -S ttf-sourcecodepro-nerd noto-fonts-emoji
-```
-
-## vimtex probleams
-```shell
-#目录权限  
-sudo chown -R $(whoami):$(whoami) ~/.cache/vimtex 
-```
-
 ## Table of Contents
 
 [TOC]
