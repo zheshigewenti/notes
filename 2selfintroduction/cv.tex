@@ -135,8 +135,8 @@
     \par\kern\topsep
 } % 页眉的新环境
 
-\newcommand{\placelastupdatedtext}{% \placetextbox{<水平位置>}{<垂直位置>}{<内容>}
-  \AddToShipoutPictureFG*{% 将内容添加到当前页面前景
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% 将<stuff>添加到当前页面前景
     \put(
         \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
