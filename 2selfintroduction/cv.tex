@@ -29,13 +29,11 @@
 \usepackage[pscoord]{eso-pic} % 用于在页面上放置浮动文本
 \usepackage{calc} % 用于计算长度
 \usepackage{bookmark} % 用于书签
-\usepackage{lastpage} % 用于获取总页数
 \usepackage{changepage} % 用于单列条目 (adjustwidth 环境)
 \usepackage{paracol} % 用于双列和三列条目
 \usepackage{ifthen} % 用于条件判断语句
 \usepackage{needspace} % 用于避免在章节标题后紧接着直接分页
 \usepackage{iftex} % 检查编译引擎是 pdflatex, xetex 还是 luatex
-
 % 确保生成的 PDF 是机器可读的/可被 ATS 解析的：
 \ifPDFTeX
     \input{glyphtounicode}
@@ -44,8 +42,8 @@
     \usepackage[utf8]{inputenc}
     \usepackage{lmodern}
 \fi
+% \usepackage{lastpage} % 用于获取总页数
 
-\usepackage{charter}
 
 % 一些设置 :
 \raggedright
@@ -322,3 +320,5 @@
     
 
 \end{document}
+
+
