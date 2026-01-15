@@ -136,7 +136,7 @@
 } % 页眉的新环境
 
 \newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{% 将<stuff>添加到当前页面前景
+  \AddToShipoutPictureFG*{%Add <stuff> to current page foreground
     \put(
         \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
