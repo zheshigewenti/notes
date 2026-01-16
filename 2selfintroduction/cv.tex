@@ -7,11 +7,19 @@
     bottom=2 cm, % 正文内容与页面底边缘的间距
     left=2 cm, % 正文内容与页面左边缘的间距
     right=2 cm, % 正文内容与页面右边缘的间距
-    footskip=1 cm, % 正文与页脚之间的间距
+    % footskip=1 cm, % 正文与页脚之间的间距
     % showframe % 用于调试显示页面框架 
 ]{geometry} % 用于调整页面几何结构
+\usepackage[
+    pdftitle={CV},
+    pdfauthor={dzn},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % 用于链接、元数据和书签
 \usepackage[UTF8]{ctex} % 仅负责中文
 \usepackage{titlesec} % 用于自定义章节标题
+\usepackage{calc}
 \usepackage{tabularx} % 用于制作带固定宽度列的表格
 \usepackage{array} % tabularx 宏包的依赖项
 \usepackage[dvipsnames]{xcolor} % 用于设置文本颜色
@@ -19,35 +27,16 @@
 \usepackage{enumitem} % 用于自定义列表
 \usepackage{fontawesome5} % 用于使用图标
 \usepackage{amsmath} % 用于数学公式
-\usepackage[
-    pdftitle={dzn's CV},
-    pdfauthor={dzn},
-    pdfcreator={LaTeX with RenderCV},
-    colorlinks=true,
-    urlcolor=primaryColor
-]{hyperref} % 用于链接、元数据和书签
-\usepackage[pscoord]{eso-pic} % 用于在页面上放置浮动文本
-\usepackage{calc} % 用于计算长度
 \usepackage{bookmark} % 用于书签
 \usepackage{changepage} % 用于单列条目 (adjustwidth 环境)
 \usepackage{paracol} % 用于双列和三列条目
-\usepackage{ifthen} % 用于条件判断语句
 \usepackage{needspace} % 用于避免在章节标题后紧接着直接分页
-\usepackage{iftex} % 检查编译引擎是 pdflatex, xetex 还是 luatex
-% 确保生成的 PDF 是机器可读的/可被 ATS 解析的：
-\ifPDFTeX
-    \input{glyphtounicode}
-    \pdfgentounicode=1
-    \usepackage[T1]{fontenc}
-    \usepackage[utf8]{inputenc}
-    \usepackage{lmodern}
-\fi
 % \usepackage{lastpage} % 用于获取总页数
 
 
 % 一些设置 :
 \raggedright
-\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % 移除 adjustwidth 环境前的间距
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % 取消换行引起的格外垂直边距 
 \pagestyle{empty} % 不显示页眉或页脚
 \setcounter{secnumdepth}{0} % 取消章节编号
 \setlength{\parindent}{0pt} % 取消缩进
@@ -132,17 +121,6 @@
 }{
     \par\kern\topsep
 } % 页眉的新环境
-
-\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{%Add <stuff> to current page foreground
-    \put(
-        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
-    ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
-    }}}%
-  }%
-}%
 
 % 将原始的 href 命令保存到一个新命令中：
 \let\hrefWithoutArrow\href
@@ -320,5 +298,4 @@
     
 
 \end{document}
-
 
