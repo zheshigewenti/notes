@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025/nixos.org) (preloaded format=xelatex 1980.1.1)  18 JAN 2026 17:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025/nixos.org) (preloaded format=xelatex 1980.1.1)  18 JAN 2026 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,8 +907,7 @@ Package: paracol 2024/10/22 1.36 typeset columns in parallel
 (/nix/store/rx1gk22gfgz6nb5jkqlrb6kga9ic616c-texlive-combined-2025-texmfdist/te
 x/latex/needspace/needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
-)
-No file cv.aux.
+) (./cv.aux)
 \openout1 = `cv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
@@ -931,6 +930,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
 LaTeX Font Info:    ... okay on input line 131.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 131.
 LaTeX Font Info:    ... okay on input line 131.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -966,9 +966,6 @@ LaTeX Font Info:    ... okay on input line 131.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 131.
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1039,10 +1036,10 @@ L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18174 strings out of 470063
- 373966 string characters out of 5474022
- 831606 words of memory out of 5000000
- 46225 multiletter control sequences out of 15000+600000
+ 18177 strings out of 470063
+ 373999 string characters out of 5474022
+ 831608 words of memory out of 5000000
+ 46226 multiletter control sequences out of 15000+600000
  631724 words of font info for 74 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  93i,7n,112p,374b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
